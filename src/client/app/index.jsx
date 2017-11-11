@@ -7,7 +7,9 @@ class App extends React.Component {
   render () {
     return (
       <div>
+      	<h1>Hold up!</h1>
         <p>It's ya bois, Webpack & react.....</p>
+        <p>Coming to you live</p>
         <AwesomeComponent />
       </div>
     );

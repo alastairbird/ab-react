@@ -11,3 +11,7 @@
 ## Should now be here:
 
 	localhost:9000
+
+## Also run the following to watch:
+
+	npm run watch
