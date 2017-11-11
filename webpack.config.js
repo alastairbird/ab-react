@@ -15,9 +15,15 @@ var config = {
       {
         test : /\.jsx?/,
         include : APP_DIR,
+        exclude : /node_modules/,
         loader : 'babel-loader'
       }
     ]
+  },
+  devServer: {
+	contentBase: path.resolve(__dirname, 'src/client'),
+	compress: true,
+	port: 9000,
   }
 };
 
