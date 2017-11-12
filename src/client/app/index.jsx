@@ -2,6 +2,8 @@ import React from 'react';
 import {render} from 'react-dom';
 import TestComponent from './TestComponent.jsx';
 
+require('../sass/base/base.scss')
+
 
 class App extends React.Component {
   render () {
