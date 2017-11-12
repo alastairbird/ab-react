@@ -948,9 +948,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(18);
 
-var _AwesomeComponent = __webpack_require__(27);
+var _TestComponent = __webpack_require__(27);
 
-var _AwesomeComponent2 = _interopRequireDefault(_AwesomeComponent);
+var _TestComponent2 = _interopRequireDefault(_TestComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -990,7 +990,7 @@ var App = function (_React$Component) {
           null,
           'Coming to you live'
         ),
-        _react2.default.createElement(_AwesomeComponent2.default, null)
+        _react2.default.createElement(_TestComponent2.default, null)
       );
     }
   }]);
@@ -18284,20 +18284,20 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var styles = __webpack_require__(28);
 
-var AwesomeComponent = function (_React$Component) {
-  _inherits(AwesomeComponent, _React$Component);
+var TestComponent = function (_React$Component) {
+  _inherits(TestComponent, _React$Component);
 
-  function AwesomeComponent(props) {
-    _classCallCheck(this, AwesomeComponent);
+  function TestComponent(props) {
+    _classCallCheck(this, TestComponent);
 
-    var _this = _possibleConstructorReturn(this, (AwesomeComponent.__proto__ || Object.getPrototypeOf(AwesomeComponent)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (TestComponent.__proto__ || Object.getPrototypeOf(TestComponent)).call(this, props));
 
     _this.state = { likesCount: 0 };
     _this.onLike = _this.onLike.bind(_this);
     return _this;
   }
 
-  _createClass(AwesomeComponent, [{
+  _createClass(TestComponent, [{
     key: 'onLike',
     value: function onLike() {
       var newLikesCount = this.state.likesCount + 1;
@@ -18309,7 +18309,7 @@ var AwesomeComponent = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: styles.test },
-        'Likes : ',
+        'Tings : ',
         _react2.default.createElement(
           'span',
           null,
@@ -18321,17 +18321,17 @@ var AwesomeComponent = function (_React$Component) {
           _react2.default.createElement(
             'button',
             { onClick: this.onLike },
-            'Like Me'
+            'Ting count'
           )
         )
       );
     }
   }]);
 
-  return AwesomeComponent;
+  return TestComponent;
 }(_react2.default.Component);
 
-exports.default = AwesomeComponent;
+exports.default = TestComponent;
 
 /***/ }),
 /* 28 */

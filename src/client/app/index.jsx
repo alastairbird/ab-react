@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-import AwesomeComponent from './AwesomeComponent.jsx';
+import TestComponent from './TestComponent.jsx';
 
 
 class App extends React.Component {
@@ -10,7 +10,7 @@ class App extends React.Component {
       	<h1>Hold up!</h1>
         <p>It's ya bois, Webpack & react.....</p>
         <p>Coming to you live</p>
-        <AwesomeComponent />
+        <TestComponent />
       </div>
     );
   }

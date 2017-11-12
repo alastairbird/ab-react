@@ -2,7 +2,7 @@ import React from 'react';
 const styles = require('../sass/components/test.scss')
 
 
-class AwesomeComponent extends React.Component {
+class TestComponent extends React.Component {
 
   constructor(props) {
     super(props);
@@ -18,12 +18,12 @@ class AwesomeComponent extends React.Component {
   render() {
     return (
       <div className={styles.test}>
-        Likes : <span>{this.state.likesCount}</span>
-        <div><button onClick={this.onLike}>Like Me</button></div>
+        Tings : <span>{this.state.likesCount}</span>
+        <div><button onClick={this.onLike}>Ting count</button></div>
       </div>
     );
   }
 
 }
 
-export default AwesomeComponent;
+export default TestComponent;
