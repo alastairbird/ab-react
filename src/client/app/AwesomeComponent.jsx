@@ -1,4 +1,6 @@
 import React from 'react';
+const styles = require('../sass/components/test.scss')
+
 
 class AwesomeComponent extends React.Component {
 
@@ -15,7 +17,7 @@ class AwesomeComponent extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={styles.test}>
         Likes : <span>{this.state.likesCount}</span>
         <div><button onClick={this.onLike}>Like Me</button></div>
       </div>
