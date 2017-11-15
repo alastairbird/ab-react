@@ -1,5 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+import BackButton from './BackButton.jsx';
 import TestComponent from './TestComponent.jsx';
 
 require('../sass/base/base.scss')
@@ -9,10 +10,8 @@ class App extends React.Component {
   render () {
     return (
       <div>
-      	<h1>Hold up!</h1>
-        <p>It's ya bois, Webpack & react.....</p>
-        <p>Coming to you live</p>
-        <TestComponent />
+      	<TestComponent />
+        <BackButton />
       </div>
     );
   }
