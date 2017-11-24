@@ -3,8 +3,8 @@ const autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
-var APP_DIR = path.resolve(__dirname, 'src/client/app');
+var BUILD_DIR = path.resolve(__dirname, 'src/public');
+var APP_DIR = path.resolve(__dirname, 'src/app');
 
 var config = {
   entry: APP_DIR + '/index.jsx',
@@ -50,7 +50,7 @@ var config = {
     new ExtractTextPlugin("styles.css"),
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, 'src/client'),
+    contentBase: path.resolve(__dirname, 'src'),
     compress: true,
     port: 9000,
   }
