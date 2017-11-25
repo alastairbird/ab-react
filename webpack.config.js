@@ -10,7 +10,8 @@ var config = {
   entry: APP_DIR + '/index.jsx',
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   module : {
     loaders : [
@@ -53,7 +54,10 @@ var config = {
     contentBase: path.resolve(__dirname, 'src'),
     compress: true,
     port: 9000,
-  }
+      historyApiFallback: {
+        index: 'index.html'
+      }
+    }
 };
 
 module.exports = config;
