@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
+
 const styles = require('../sass/components/test.scss')
 
 
-class TestComponent extends React.Component {
+export class Header extends React.Component {
 
   constructor(props) {
     super(props);
@@ -12,11 +14,11 @@ class TestComponent extends React.Component {
   render() {
     return (
       <div className={styles.test}>
-        test
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/OtherPage'>OtherPage</Link></li>
       </div>
     );
   }
 
 }
 
-export default TestComponent;
