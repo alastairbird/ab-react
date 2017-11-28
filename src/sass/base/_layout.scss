@@ -1,7 +1,19 @@
 // ======================================================================
 //  Lay it out!
 // ======================================================================
+@import "settings";
 
 body {
 	background: #2A2A2A;
+}
+
+footer,
+section {
+	// max-width: $base-width;
+	margin: 0 auto;
+	padding: $base-gutter;
+}
+
+footer {
+	color: #888;
 }

@@ -1,8 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import { Header } from './Header.jsx';
+import { Footer } from './Footer.jsx';
 import { Home } from './pages/Home.jsx';
 import { OtherPage } from './pages/OtherPage.jsx';
 
@@ -20,7 +21,10 @@ class App extends React.Component {
     return (
       <div>
       	<Header/>
-        <Main/>
+        <section>
+          <Main/>
+        </section>
+        <Footer/>
       </div>
     );
   }

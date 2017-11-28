@@ -45,6 +45,15 @@ var config = {
           'sass-loader'
         ]
       },
+      {
+        test: /\.(|jpg|jpeg|png|svg)$/,
+        loader: 'url-loader',
+        options: {
+          name: 'img/[hash].[ext]',
+          publicPath: '/',
+          limit: 25000,
+        },
+      },
     ]
   },
   plugins: [

@@ -1,0 +1,37 @@
+// ======================================================================
+// Header component
+// ======================================================================
+@import "../base/settings";
+
+.header {
+	padding: $base-gutter;
+}
+
+.headerLogo {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: #fff;
+	animation: HeaderLogo 3s ease infinite;
+	background: linear-gradient(270deg, #0cdfd7, #0c80df, #df0c83);
+	background-size: 600% 600%;
+}
+
+@keyframes HeaderLogo {
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+	
+.headerNav {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		display: inline-block;
+		margin-left: 2em;
+	}
+}

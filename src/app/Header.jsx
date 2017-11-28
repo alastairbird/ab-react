@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-const styles = require('../sass/components/test.scss')
+const styles = require('../sass/components/header.scss')
 
 
 export class Header extends React.Component {
@@ -13,10 +13,13 @@ export class Header extends React.Component {
 
   render() {
     return (
-      <div className={styles.test}>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/OtherPage'>OtherPage</Link></li>
-      </div>
+      <header className={styles.header}>
+        <span className={styles.headerLogo}></span>
+        <ul className={styles.headerNav}>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/OtherPage'>OtherPage</Link></li>
+        </ul>
+      </header>
     );
   }
 
