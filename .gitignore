@@ -47,8 +47,14 @@ Temporary Items
 .apdisk
 
 # =========================
+# IDE files
+# =========================
+
+# IntelliJ
+.idea/
+
+# =========================
 # Project ignore
 # =========================
 /node_modules
 .sass-cache
-

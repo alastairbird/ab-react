@@ -10,10 +10,12 @@ import { OtherPage } from './pages/OtherPage.jsx';
 require('../sass/base/base.scss')
 
 const Main = () => (
+  <section>
     <Switch>
       <Route exact path='/' component={Home}/>
       <Route path='/OtherPage' component={OtherPage}/>
     </Switch>
+  </section>
 )
 
 class App extends React.Component {
@@ -21,9 +23,7 @@ class App extends React.Component {
     return (
       <div>
       	<Header/>
-        <section>
-          <Main/>
-        </section>
+        <Main/>
         <Footer/>
       </div>
     );

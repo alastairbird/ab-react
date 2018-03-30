@@ -1,12 +1,14 @@
 {
   "name": "ab-react",
   "version": "1.0.0",
-  "description": "Alastair Birds react website",
+  "description": "Alastair Birds react app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --progress",
-    "start": "webpack-dev-server --progress --colors"
+    "start-dev": "webpack-dev-server --progress --colors",
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p --progress"
   },
   "keywords": [
     "react"

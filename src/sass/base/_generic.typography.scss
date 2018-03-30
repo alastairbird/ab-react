@@ -1,25 +1,35 @@
 // ======================================================================
-//  Typographys
+//  Typography
 // ======================================================================
-
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,700');
 
 body {
 	font-family: 'Barlow', sans-serif;
 	font-weight: 400;
-	color: #f9f9f9;
-}
-
-h1,
-h2,
-h3,
-h4,
-strong {
-	font-weight: 700;
+	color: var(--color-base-text);
 }
 
 a,
 a:visited {
-	color: #fff;
+	color: var(--color-base-text);
 	text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: var(--heading-weight);
+}
+
+h1 {
+  font-size: var(--h1-size);
+  line-height: 3.6rem;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  line-height: 3.6rem;
+}
+
+h3 {
+  font-size: var(--h3-size);
+  line-height: 2.4rem;
 }

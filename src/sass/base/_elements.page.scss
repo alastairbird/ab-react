@@ -1,0 +1,23 @@
+// ======================================================================
+//  Page level styling
+//  (e.g. HTML and BODY elements)
+// ======================================================================
+
+// 1. Make the root font size equivalent to 10px so rem calculations are easier
+
+html {
+  font-size: 62.5%; // [1]
+  line-height: var(--base-line-height);
+  font-family: var(--base-font-family);
+  background: var(--color-grey-bg);
+  color: var(--color-base-text);
+}
+
+body {
+  font-size: var(--base-font-size);
+}
+
+footer,
+section {
+	padding: var(--gutter);
+}

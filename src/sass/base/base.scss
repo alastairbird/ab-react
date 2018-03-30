@@ -1,8 +1,14 @@
 // ======================================================================
-//  Base base base
+//  Base styling
 // ======================================================================
 
 @import "settings";
+
 @import "normalise";
-@import "layout";
-@import "type";
+@import "generic.box-sizing";
+@import "generic.reset";
+@import "generic.typography";
+
+@import "elements.page";
+@import "elements.form";
+@import "elements.images";

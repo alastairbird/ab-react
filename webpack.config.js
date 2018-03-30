@@ -3,7 +3,7 @@ const autoprefixer = require('autoprefixer');
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'src/public');
+var BUILD_DIR = path.resolve(__dirname, 'public');
 var APP_DIR = path.resolve(__dirname, 'src/app');
 
 var config = {
@@ -60,13 +60,13 @@ var config = {
     new ExtractTextPlugin("styles.css"),
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, 'src'),
+    contentBase: path.resolve(__dirname),
     compress: true,
     port: 9000,
-      historyApiFallback: {
-        index: 'index.html'
-      }
+    historyApiFallback: {
+      index: 'public/index.html'
     }
+  }
 };
 
 module.exports = config;
